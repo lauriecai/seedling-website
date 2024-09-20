@@ -9,45 +9,65 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar container">
-            <a href="">Features</a>
-            <a href="https://seedling.canny.io/feature-requests" target="_blank">Feature Requests</a>
-            <a href="">Contact</a>
-        </nav>
-    </header>
+    <nav id="nav-bar" class="wrapper">
+        <div id="nav-container">
+            <a href="" class="nav-item">Features</a>
+            <a href="https://seedling.canny.io/feature-requests" target="_blank" class="nav-item">Feature Requests</a>
+            <a href="mailto:laurie801@gmail.com" class="nav-item">Contact</a>
+        </div>
+    </nav>
     <main>
-        <section>
-            <img src="./images/icons/app-icon-70x70.png" alt="Seedling app icon">
-            <p>Seedling</p>
-            <h1>A simple garden journal to track the progress of your plants</h1>
-            <a href="https://apple.co/3XMwEcv" target="_blank">
+        <section id="hero" class="wrapper">
+            <div class="app-icon-with-name">
+                <img src="./images/icons/app-icon-70x70.png" id="app-icon-70x70">
+                <p id="app-name-70x70">Seedling</p>
+            </div>
+            <h1 id="hero-header">A simple garden journal to track the progress of your plants</h1>
+            <a href="https://apple.co/3XMwEcv" target="_blank" class="apple-download-button">
                 <img src="./images/buttons/button-download-dark.png" alt="Download for iPhone">
             </a>
         </section>
 
-        <section>
-            <h2>Capture every step of your plant’s journey, from seed to harvest</h2>
-            <h3>Write about growth patterns or unexpected changes. Track important milestones.</h3>
-            <img src="./images/app-ui/plant-list-tomato-example.png" alt="List of garden plants with tomato selected">
-            <img src="./images/app-ui/plant-post-tomato-example.png"
-                alt="Journal entries and milestones for selected tomato plant">
+        <section id="journal" class="wrapper">
+            <div class="section-header">
+                <h2 class="section-title">Capture every step of your plant’s journey, from seed to harvest</h2>
+                <h3 class="section-description">Write about growth patterns or unexpected changes. Track important
+                    milestones.</h3>
+            </div>
+            <div class="section-image">
+                <div id="journal-images-container">
+                    <img src="./images/app-ui/plant-list-tomato-example.png"
+                        alt="List of garden plants with tomato selected">
+                    <img src="./images/app-ui/plant-post-tomato-example.png"
+                        alt="Journal entries and milestones for selected tomato plant">
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h1>Keep track of plant care requirements</h1>
-            <h2>From sunlight preferences to soil types, document each plant’s unique needs.</h2>
-            <img src="./images/app-ui/care-requirements-example.png"
-                alt="Cards containing care requirements for each plant">
+        <section id="care-requirements" class="wrapper">
+            <div class="section-header">
+                <h2 class="section-title">Keep track of plant care requirements</h2>
+                <h3 class="section-description">From sunlight preferences to soil types, document each plant’s unique
+                    needs.</h3>
+            </div>
+            <div class="section-image">
+                <img src="./images/app-ui/care-requirements-example.png"
+                    alt="Cards containing care requirements for each plant">
+            </div>
         </section>
 
-        <section>
-            <h1>Stay on top of garden tasks</h1>
-            <h2>Keep your garden tasks organized with categorized to-do lists.</h2>
-            <img src="./images/app-ui/tasks-example.png" alt="Categorized to-do lists such as maintenance and planning">
+        <section id="tasks" class="wrapper">
+            <div class="section-header">
+                <h2 class="section-title">Stay on top of garden tasks</h2>
+                <h3 class="section-description">Keep your garden tasks organized with categorized to-do lists.</h3>
+            </div>
+            <div class="section-image">
+                <img src="./images/app-ui/tasks-example.png"
+                    alt="Categorized to-do lists such as maintenance and planning">
+            </div>
         </section>
 
-        <section>
+        <section id="download" class="wrapper">
             <a href="https://apple.co/3XMwEcv" target="_blank">
                 <img src="./images/buttons/button-download-light.png" alt="Download for iPhone">
             </a>
@@ -55,25 +75,35 @@
     </main>
 
     <footer>
-        <img src="./images/icons/app-icon-40x40.png" alt="Seedling app icon">
-        <p>Seedling is an independent app created by Laurie Cai. Laurie Cai © 2024. All rights reserved.</p>
+        <div class="wrapper">
+            <div id="app-description">
+                <img src="./images/icons/app-icon-40x40.png" alt="Seedling app icon">
+                <p>Seedling is an independent app created by Laurie Cai. Laurie Cai © 2024. All rights reserved.</p>
+            </div>
 
-        <p>Resources</p>
-        <ul>
-            <li>
-                <a href="https://seedling.canny.io/feature-requests" target="_blank">Feature Requests</a>
-            </li>
-            <li>
-                <a href="https://docs.google.com/document/d/1b1iX4wFgEI-auWVaKAPjoSjgzZUNSw3QaWQuvOkXnW4/edit?usp=drive_link"
-                    target="_blank">Privacy Policy</a>
-            </li>
-        </ul>
+            <div class="link-categories">
+                <div class="link-column">
+                    <p>Resources</p>
+                    <ul>
+                        <li>
+                            <a href="https://seedling.canny.io/feature-requests" target="_blank">Feature Requests</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/1b1iX4wFgEI-auWVaKAPjoSjgzZUNSw3QaWQuvOkXnW4/edit?usp=drive_link"
+                                target="_blank">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
 
-        <p>Contact</p>
-        <ul>
-            <li><a href="mailto:laurie801@gmail.com">Get in Touch</a>
-        </ul>
-        </ul>
+                <div class="link-column">
+                    <p>Contact</p>
+                    <ul>
+                        <li><a href="mailto:laurie801@gmail.com">Get in Touch</a>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
