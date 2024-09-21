@@ -25,17 +25,35 @@ html {
     --background-color-dark: #2A2A2A;
     --background-color-light: #FFFFFF;
     /* Font variables */
-    --heading-1: 2rem 800;
-    --heading-2: 1.4rem 800;
-    --subheading-1: 1.4rem 600;
-    --subheading-2: 1.2rem 600;
-    --body: 1rem 700;
-    --caption: 1rem 800;
+    --heading-1: 700 2rem 'Handjet', sans-serif;
+    --heading-2: 700 1.4rem 'Handjet', sans-serif;
+    --subheading-1: 600 1.4rem 'Handjet', sans-serif;
+    --subheading-2: 600 1.2rem 'Handjet', sans-serif;
+    --body: 600 1rem 'Handjet', sans-serif;
+    --caption: 600 1rem 'Handjet', sans-serif;
 }
 
+/* Global Elements */
 .wrapper {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-header .section-title {
+    font: var(--heading-2);
+    color: var(--text-color-primary);
+}
+
+.section-header .section-description {
+    font: var(--subheading-2);
+    color: var(--text-color-secondary);
 }
 
 /* Navigation Bar */
@@ -43,7 +61,6 @@ html {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    width: 100%;
 }
 
 .nav-container {
@@ -65,8 +82,6 @@ html {
     align-items: center;
     gap: 50px;
     padding: 70px 0 60px;
-    max-width: 100%;
-    background-color: yellow;
 }
 
 .app-icon-with-name {
@@ -88,6 +103,7 @@ html {
 }
 
 .hero-header {
+    font: var(--heading-1);
     text-align: center;
 }
 
@@ -98,4 +114,26 @@ html {
 
 .apple-download-button img {
     width: 170px;
+}
+
+/* Journal Section */
+.journal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 90px 0 50px;
+}
+
+.journal-images-container {
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.journal-images-container img {
+    height: auto;
+    width: 48%;
 }
