@@ -25,17 +25,17 @@ html {
     --background-color-dark: #2A2A2A;
     --background-color-light: #FFFFFF;
     /* Font variables */
-    --heading-1: 500 2rem 'Handjet', sans-serif;
-    --heading-2: 500 1.4rem 'Handjet', sans-serif;
-    --subheading-1: 400 1.4rem 'Handjet', sans-serif;
-    --subheading-2: 300 1.2rem 'Handjet', sans-serif;
+    --heading-1: 600 2rem 'Handjet', sans-serif;
+    --heading-2: 600 1.4rem 'Handjet', sans-serif;
+    --subheading-1: 500 1.4rem 'Handjet', sans-serif;
+    --subheading-2: 400 1.2rem 'Handjet', sans-serif;
     --body: 400 1rem 'Handjet', sans-serif;
-    --caption: 400 1rem 'Handjet', sans-serif;
+    --caption: 600 1rem 'Handjet', sans-serif;
 }
 
 /* Global Elements */
 .wrapper {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -182,4 +182,71 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 80px 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--background-color-dark);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    margin: 50px 0 80px;
+    font: var(--body);
+}
+
+.app-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    flex-grow: 2;
+}
+
+.app-description img {
+    width: 40px;
+}
+
+.app-description p {
+    color: var(--text-color-secondary);
+}
+
+.link-categories {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.link-column .column-title {
+    font: var(--body);
+    color: var(--text-color-secondary);
+}
+
+.link-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    font: var(--body);
+    color: var(--text-color-light);
+}
+
+.link-column ul a {
+    text-decoration: none;
+    color: inherit;
 }
