@@ -39,6 +39,10 @@ html {
     margin: 0 auto;
 }
 
+.apple-download-button img {
+    width: 170px;
+}
+
 .section-header {
     display: flex;
     flex-direction: column;
@@ -49,11 +53,13 @@ html {
 .section-header .section-title {
     font: var(--heading-2);
     color: var(--text-color-primary);
+    text-align: center;
 }
 
 .section-header .section-description {
     font: var(--subheading-2);
     color: var(--text-color-secondary);
+    text-align: center;
 }
 
 /* Navigation Bar */
@@ -112,10 +118,6 @@ html {
     color: var(--text-color-accent);
 }
 
-.apple-download-button img {
-    width: 170px;
-}
-
 /* Journal Section */
 .journal {
     display: flex;
@@ -154,4 +156,22 @@ html {
 
 .care-requirements img {
     width: 80%;
+}
+
+/* Tasks Section */
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.tasks .section-image {
+    display: flex;
+    justify-content: center;
+}
+
+.tasks img {
+    width: 50%;
 }
