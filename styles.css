@@ -1,7 +1,9 @@
-/* Import Handjet font */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* Reset default styles */
+/* Reset */
 *,
 *::before,
 *::after {
@@ -12,25 +14,26 @@
 
 html {
     font-size: 20px;
-    font-family: 'Handjet', sans-serif;
+    text-rendering: optimizeLegibility;
 }
 
 :root {
-    /* Color variables */
+    /* Color Variables */
     --text-color-primary: #1E1E1E;
-    --text-color-secondary: #b0ad9a;
+    --text-color-secondary: #b2b0a6;
     --text-color-accent: #C0BFB3;
     --text-color-light: #E1E1E1;
     --text-color-link: #6D8F5D;
     --background-color-dark: #2A2A2A;
     --background-color-light: #FFFFFF;
-    /* Font variables */
-    --heading-1: 600 2rem 'Handjet', sans-serif;
-    --heading-2: 600 1.4rem 'Handjet', sans-serif;
-    --subheading-1: 500 1.4rem 'Handjet', sans-serif;
-    --subheading-2: 400 1.2rem 'Handjet', sans-serif;
-    --body: 400 1rem 'Handjet', sans-serif;
-    --caption: 600 1rem 'Handjet', sans-serif;
+    /* Font Variables */
+    --font-heading-1: 700 2rem 'Merriweather', serif;
+    --font-heading-2: 900 1.2rem 'Merriweather', serif;
+    --font-subheading-1: 500 1rem 'Inter', sans-serif;
+    --font-subheading-2: 400 0.90rem 'Inter', sans-serif;
+    --font-body-header: 600 0.62rem 'Inter', sans-serif;
+    --font-body: 500 0.70rem 'Inter', sans-serif;
+    --font-caption: 500 1rem 'Handjet', sans-serif;
 }
 
 /* Global Elements */
@@ -51,13 +54,13 @@ html {
 }
 
 .section-header .section-title {
-    font: var(--heading-2);
+    font: var(--font-heading-2);
     color: var(--text-color-primary);
     text-align: center;
 }
 
 .section-header .section-description {
-    font: var(--subheading-2);
+    font: var(--font-subheading-2);
     color: var(--text-color-secondary);
     text-align: center;
 }
@@ -76,7 +79,7 @@ html {
 }
 
 .nav-item {
-    font: var(--body);
+    font: var(--font-body);
     color: var(--text-color-link);
     text-decoration: none;
 }
@@ -104,17 +107,17 @@ html {
 }
 
 .app-icon-with-name p {
-    font: var(--caption);
+    font: var(--font-caption);
     color: var(--text-color-primary);
 }
 
 .hero-header {
-    font: var(--heading-1);
+    font: var(--font-heading-1);
     text-align: center;
 }
 
 .hero-header span {
-    font: var(--heading-1);
+    font: var(--font-heading-1);
     color: var(--text-color-accent);
 }
 
@@ -199,7 +202,7 @@ footer {
     align-items: flex-start;
     gap: 100px;
     margin: 50px 0 80px;
-    font: var(--body);
+    font: var(--font-body);
 }
 
 .app-description {
@@ -216,13 +219,14 @@ footer {
 
 .app-description p {
     color: var(--text-color-secondary);
+    line-height: 150%;
 }
 
 .link-categories {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 30px;
+    gap: 50px;
 }
 
 .link-column {
@@ -233,8 +237,9 @@ footer {
 }
 
 .link-column .column-title {
-    font: var(--body);
+    font: var(--font-body-header);
     color: var(--text-color-secondary);
+    text-transform: uppercase;
 }
 
 .link-column ul {
@@ -242,7 +247,7 @@ footer {
     flex-direction: column;
     gap: 10px;
     list-style-type: none;
-    font: var(--body);
+    font: var(--font-body);
     color: var(--text-color-light);
 }
 
