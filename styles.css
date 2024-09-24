@@ -1,32 +1,38 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Merriweather:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* Reset */
 *,
 *::before,
 *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+/* Custom Properties */
 :root {
-    /* Color Variables */
-    --text-color-primary: #1E1E1E;
-    --text-color-secondary: #b2b0a6;
-    --text-color-accent: #C0BFB3;
-    --text-color-light: #E1E1E1;
-    --text-color-link: #6D8F5D;
-    --background-color-dark: #2A2A2A;
-    --background-color-light: #FFFFFF;
-    /* Font Variables */
+    /* Color */
+    --color-text-primary: #1E1E1E;
+    --color-text-secondary: #b2b0a6;
+    --color-text-accent: #C0BFB3;
+    --color-text-light: #E1E1E1;
+    --color-text-link: #6D8F5D;
+    --color-bg-dark: #2A2A2A;
+    --color-bg-light: #FFFFFF;
+    /* Typography */
     --font-heading-1: 700 2rem 'Merriweather', serif;
     --font-heading-2: 900 1.2rem 'Merriweather', serif;
     --font-subheading-1: 500 1rem 'Inter', sans-serif;
@@ -42,8 +48,20 @@ html {
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 100%;
+    }
+}
+
 .apple-download-button img {
     width: 170px;
+}
+
+@media (max-width: 480px) {
+    .apple-download-button img {
+        width: 140px;
+    }
 }
 
 .section-header {
@@ -55,14 +73,18 @@ html {
 
 .section-header .section-title {
     font: var(--font-heading-2);
-    color: var(--text-color-primary);
+    color: var(--color-text-primary);
     text-align: center;
+    line-height: 150%;
+    margin: 0 20px;
 }
 
 .section-header .section-description {
     font: var(--font-subheading-2);
-    color: var(--text-color-secondary);
+    color: var(--color-text-secondary);
     text-align: center;
+    line-height: 150%;
+    margin: 0 40px;
 }
 
 /* Navigation Bar */
@@ -80,7 +102,7 @@ html {
 
 .nav-item {
     font: var(--font-body);
-    color: var(--text-color-link);
+    color: var(--color-text-link);
     text-decoration: none;
 }
 
@@ -108,17 +130,18 @@ html {
 
 .app-icon-with-name p {
     font: var(--font-caption);
-    color: var(--text-color-primary);
+    color: var(--color-text-primary);
 }
 
 .hero-header {
     font: var(--font-heading-1);
     text-align: center;
+    margin: 20px;
 }
 
 .hero-header span {
     font: var(--font-heading-1);
-    color: var(--text-color-accent);
+    color: var(--color-text-accent);
 }
 
 /* Journal Section */
@@ -132,15 +155,30 @@ html {
 
 .journal-images-container {
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     max-width: 100%;
+    margin: 20px;
+}
+
+@media (max-width: 640px) {
+    .journal-images-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 }
 
 .journal-images-container img {
     height: auto;
     width: 48%;
+}
+
+@media (max-width: 640px) {
+    .journal-images-container img {
+        width: 75%;
+    }
 }
 
 /* Care Requirements Section */
@@ -179,6 +217,12 @@ html {
     width: 50%;
 }
 
+@media (max-width: 640px) {
+    .tasks img {
+        width: 70%;
+    }
+}
+
 /* Download Section */
 .download {
     display: flex;
@@ -189,7 +233,7 @@ html {
 
 /* Footer */
 footer {
-    background-color: var(--background-color-dark);
+    background-color: var(--color-bg-dark);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -205,6 +249,16 @@ footer {
     font: var(--font-body);
 }
 
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin: 50px 0 80px;
+        font: var(--font-body);
+    }
+}
+
 .app-description {
     display: flex;
     flex-direction: column;
@@ -213,12 +267,27 @@ footer {
     flex-grow: 2;
 }
 
+@media (max-width: 768px) {
+    .app-description {
+        align-items: center;
+        gap: 20px;
+        flex-grow: 2;
+        text-align: center;
+    }
+}
+
 .app-description img {
     width: 40px;
 }
 
+@media (max-width: 768px) {
+    .app-description img {
+        width: 50px;
+    }
+}
+
 .app-description p {
-    color: var(--text-color-secondary);
+    color: var(--color-text-secondary);
     line-height: 150%;
 }
 
@@ -238,7 +307,7 @@ footer {
 
 .link-column .column-title {
     font: var(--font-body-header);
-    color: var(--text-color-secondary);
+    color: var(--color-text-secondary);
     text-transform: uppercase;
 }
 
@@ -248,7 +317,7 @@ footer {
     gap: 10px;
     list-style-type: none;
     font: var(--font-body);
-    color: var(--text-color-light);
+    color: var(--color-text-light);
 }
 
 .link-column ul a {
