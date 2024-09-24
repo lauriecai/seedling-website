@@ -49,7 +49,8 @@ html {
         --font-subheading-1: 500 1rem 'Inter', sans-serif;
         --font-subheading-2: 500 0.90rem 'Inter', sans-serif;
         --font-body-header: 600 0.70rem 'Inter', sans-serif;
-        --font-body: 500 0.85rem 'Inter', sans-serif;
+        --font-body: 500 5rem 'Inter', sans-serif;
+        /* 0.85rem */
         --font-caption: 700 1.2rem 'Handjet', sans-serif;
     }
 }
