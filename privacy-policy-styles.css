@@ -1,99 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* Reset */
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    font-size: 18px;
-    text-rendering: optimizeLegibility;
+	font-size: 18px;
+	text-rendering: optimizeLegibility;
 }
 
 /* Custom Properties */
 :root {
-    /* Color */
-    --color-text-primary: #1E1E1E;
-    --color-text-link: #6D8F5D;
-    --color-bg-light: #FFFFFF;
-    /* Typography */
-    --font-heading-1: 700 1rem 'Inter', sans-serif;
-    --font-heading-2: 700 0.9rem 'Inter', sans-serif;
-    --font-heading-3: 700 0.8rem 'Inter', sans-serif;
-    --font-heading-4: 700 0.75rem 'Inter', sans-serif;
-    --font-body: 400 0.80rem 'Inter', sans-serif;
-    --font-caption: 500 1rem 'Handjet', sans-serif;
+	/* Color */
+	--color-text-primary: #1e1e1e;
+	--color-text-link: #6d8f5d;
+	--color-bg-light: #ffffff;
+	/* Typography */
+	--font-heading-1: 700 1rem "Inter", sans-serif;
+	--font-heading-2: 700 0.9rem "Inter", sans-serif;
+	--font-heading-3: 700 0.8rem "Inter", sans-serif;
+	--font-heading-4: 700 0.75rem "Inter", sans-serif;
+	--font-body: 400 0.8rem "Inter", sans-serif;
+	--font-caption: 500 1rem "Handjet", sans-serif;
 }
 
 /* Global */
 body {
-    font: var(--font-body);
+	font: var(--font-body);
 }
 
 .wrapper {
-    width: 100%;
-    padding: 0 30px;
-    max-width: 700px;
+	width: 100%;
+	padding: 0 30px;
+	max-width: 700px;
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-text-link);
+	text-decoration: none;
+	color: var(--color-text-link);
 }
 
 /* Header */
 .app-icon-with-name {
-    margin: 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+	margin: 40px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
 }
 
 .app-icon-with-name img {
-    width: 70px;
-    height: 70px;
-    display: block;
+	width: 70px;
+	height: 70px;
+	display: block;
 }
 
 .app-icon-with-name p {
-    font: var(--font-caption);
-    color: var(--color-text-primary);
+	font: var(--font-caption);
+	color: var(--color-text-primary);
 }
 
 /* Content */
 .privacy-policy-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+main {
+	margin-bottom: 50px;
 }
 
 main .title {
-    font: var(--font-heading-1);
-    margin-bottom: 15px;
+	font: var(--font-heading-1);
+	margin-bottom: 15px;
 }
 
 section .topic {
-    font: var(--font-heading-2);
-    margin-bottom: 15px;
+	font: var(--font-heading-2);
+	margin-bottom: 15px;
 }
 
 section .topic-item {
-    font: var(--font-heading-3);
+	font: var(--font-heading-3);
 }
 
 section p {
-    font: var(--font-body);
-    line-height: 150%;
-    margin-bottom: 10px;
+	font: var(--font-body);
+	line-height: 150%;
+	margin-bottom: 10px;
 }
 
 section ul {
-    padding: 10px 0 0 40px;
-    line-height: 150%;
+	padding: 10px 0 0 40px;
+	line-height: 150%;
 }
